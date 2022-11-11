@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+<div class="calculator">
+    <span class="logo">Casio</span>
+    <span class="model">fx-82MS</span>
+    <span class="svpam">S-V.P.A.M.</span>
+    
+    <div class="screen">
+        <div class="input" id="input">0</div>
+        <div class="main-display" id="main-display">0</div>
+    </div>
+    
+    <div class="modifiers">
+        <button class="shift center-shift" tabindex="1"></button>
+        <button class="alpha center-alpha" tabindex="2"></button>
+        <button class="on center-shift" tabindex="4"></button>
+        <button class="mode" tabindex="3"></button>
+    </div>
+    
+    <div class="replay">Replay</div>
+    
+    <button class="nav up">▲</button>
+    <button class="nav down">▼</button>
+    <button class="nav left">◀︎</button>
+    <button class="nav right">▶︎</button> 
+    
+
+    <table class="function-keys">
+        <tr>
+            <td><button class="reciprocal center-shift">x<span class="sup">-1</span></button></td>
+            <td><button class="combin center-shift">nCr</button></td>
+            <td></td>
+            <td></td>
+            <td><button class="pol">Pol(</button></td>
+            <td><button class="cube center-shift">x<span class="sup">3</span></button></td>
+        </tr>
+        <tr>
+            <td><button class="frac center-shift">a<span class="sup">b</span>/<span class="xxs">c</span></button></td>
+            <td><button>&radic;</button></td>
+            <td><button class="square">x<span class="sup">2</span></button></td>
+            <td><button class="pow center-shift">^</button></td>
+            <td><button class="log center-shift">log</button></td>
+            <td><button class="ln">ln</button></td>
+        </tr>
+        <tr>
+            <td><button class="minus">(&minus;)</button></td>
+            <td><button class="deg">&deg;&prime;&Prime;</button></td>
+            <td><button class="hyp">hyp</button></td>
+            <td><button class="sin">sin</button></td>
+            <td><button class="cos">cos</button></td>
+            <td><button class="tan">tan</button></td>
+        </tr>
+        <tr>
+            <td><button class="rcl center-shift">RCL</button></td>
+            <td><button class="eng center-shift">ENG</button></td>
+            <td><button class="open-paren">(</button></td>
+            <td><button class="close-paren">)</button></td>
+            <td><button class="comma">,</button></td>
+            <td><button class="mem-plus">M+</button></td>
+        </tr>
+    </table>
+    
+    <table class="basic-keys">
+        <tr>
+            <td><button onclick="seven()">7</button></td>
+            <td><button onclick="eight()">8</button></td>
+            <td><button onclick="nine()">9</button></td>
+            <td><button class="pink del center-shift" onclick="del()">DEL</button></td>
+            <td><button class="pink ac center-shift" onclick="ac()">AC</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="four()">4</button></td>
+            <td><button onclick="five()">5</button></td>
+            <td><button onclick="six()">6</button></td>
+            <td><button onclick="multiplication()">×</button></td>
+            <td><button onclick="division()">&divide;</button></td>
+        </tr>
+        <tr>
+            <td><button class="one center-shift" onclick="one()">1</button></td>
+            <td><button class="two center-shift" onclick="two()">2</button></td>
+            <td><button onclick="three()">3</button></td>
+            <td><button onclick="addition()">+</button></td>
+            <td><button onclick="subtraction()">−</button></td>
+        </tr>
+        <tr>
+            <td><button class="zero center-shift" onclick="zero()">0</button></td>
+            <td><button class="period center-shift">.</button></td>
+            <td><button class="exp center-shift" onclick="exp()">EXP</button></td>
+            <td><button class="ans center-shift" onclick="savedResult()">Ans</button></td>
+            <td><button class="equals center-shift" onclick="show()">=</button></td>
+        </tr>
+    </table>
+</div>
+
+<script src="index.js"></script>
+    
+</body>
+</html>
